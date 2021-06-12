@@ -1,2 +1,6 @@
 kafka_2.13*
 ignore
+
+**/.idea
+**/*.iml
+**/target

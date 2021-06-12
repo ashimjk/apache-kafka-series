@@ -21,7 +21,7 @@ cleanup:
 	rm -rf /tmp/zookeeper && rm -rf /tmp/kafka-logs-*
 
 create-topic:
-	${SH_PATH}/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 1 --topic replica_topic
+	${SH_PATH}/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 3 --topic replica_topic
 
 describe-topic:
 	${SH_PATH}/kafka-topics.sh --describe --zookeeper localhost:2181 --topic replica_topic
