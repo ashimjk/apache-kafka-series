@@ -8,9 +8,7 @@ After the installation, go to the kafka directory and follow though the steps to
 ## Kafka Topic
 
 ### Create
-```shell
-bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic my_topic
-```
+`bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic my_topic`
 
 ### List
 `bin/kafka-topics.sh --list --zookeeper localhost:2181`
