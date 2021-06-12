@@ -13,7 +13,7 @@ Inside `config` directory, there are many configurations. But for our use, we wi
 `server.properties` and `zookeeper.properties` files.
 
 
-## Sections
+## Content
 - [Kafka Key Terminology](kafka-key-terms.md)
 - [Kafka Partitions](kafka-partitions.md)
 - [Run single instance of Kafka](kafka-single-instance.md)
