@@ -31,7 +31,7 @@ and follow through the steps to create a topic, start producing and consuming th
   - For instance 1 - `log.dirs=/tmp/kafka-logs-1`
   - For instance 2 - `log.dirs=/tmp/kafka-logs-2`
 
-You can also find these configurations in [samples](../samples) directory.
+You can also find these configurations in [samples](https://github.com/ashimjk/apache-kafka-series/tree/master/samples) directory.
 
 ## Start Multiple Instance
 
