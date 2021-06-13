@@ -71,3 +71,4 @@ Topic: replica_topic    TopicId: 6pL_IeaHRzW_OA4X_in1Og PartitionCount: 1       
 - [Part 3 - Run a single instance of Apache Kafka](kafka-single-instance.md)
 - [Part 5 - Kafka Producer](kafka-producer.md)
 - [Part 6 - Kafka Consumer](kafka-consumer.md)
+- [Part 7 - Kafka Challenges](kafka-challenges.md)

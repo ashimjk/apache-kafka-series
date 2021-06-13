@@ -37,3 +37,4 @@ and follow through the steps to create a topic, start producing and consuming th
 - [Part 4 - Run a multiple instances of Apache Kafka](kafka-multiple-instance.md)
 - [Part 5 - Kafka Producer](kafka-producer.md)
 - [Part 6 - Kafka Consumer](kafka-consumer.md)
+- [Part 7 - Kafka Challenges](kafka-challenges.md)
