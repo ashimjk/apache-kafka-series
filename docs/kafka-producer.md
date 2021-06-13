@@ -1,7 +1,7 @@
 # Part 5 - Kafka Producer
 
 This section describes the Kafka Producer and its internals.
-For implementation please visit the [github](../kafka-client)
+For implementation, please visit the [github](https://github.com/ashimjk/apache-kafka-series/tree/master/kafka-client).
 
 ## Three Major Required Properties
 - bootstrap.servers
@@ -11,7 +11,7 @@ For implementation please visit the [github](../kafka-client)
 - key.serializer
 - value.serializer
 
-Here is the full list of [producer configs](https://kafka.apache.org/documentation/#producerconfigs)
+Here is the full list of [producer configs](https://kafka.apache.org/documentation/#producerconfigs).
 
 ## Producer Record
 - topic

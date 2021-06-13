@@ -1,7 +1,7 @@
 # Part 6 - Kafka Consumer
 
 This section describes the Kafka Consumer and its internals.
-For implementation please visit the [github](../kafka-client)
+For implementation, please visit the [github](https://github.com/ashimjk/apache-kafka-series/tree/master/kafka-client).
 
 ## Three Major Required Properties
 - bootstrap.servers
@@ -11,7 +11,7 @@ For implementation please visit the [github](../kafka-client)
 - key.deserializer
 - value.deserializer
 
-Here is the full list of [consumer configs](https://kafka.apache.org/documentation/#consumerconfigs)
+Here is the full list of [consumer configs](https://kafka.apache.org/documentation/#consumerconfigs).
 
 ## What subscription does?
 - It will use automatic/dynamic partition assignment for topics
