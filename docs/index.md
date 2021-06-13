@@ -1,5 +1,5 @@
 ## Startup
-First, you need to download[Apache Kafka](https://downloads.apache.org/kafka/2.8.0/kafka_2.13-2.8.0.tgz).
+First, you need to download [Apache Kafka](https://downloads.apache.org/kafka/2.8.0/kafka_2.13-2.8.0.tgz).
 And extract it to your desired folder.
 
 If you go inside the Kafka directory, something like this `kafka_2.13-2.8.0`,
