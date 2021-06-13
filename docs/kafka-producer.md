@@ -11,7 +11,7 @@ For implementation, please visit the [github](https://github.com/ashimjk/apache-
 - key.serializer
 - value.serializer
 
-Here is the full list of [producer configs](https://kafka.apache.org/documentation/#producerconfigs)
+Here is the full list of [producer configs](https://kafka.apache.org/documentation/#producerconfigs).
 
 ## Producer Record
 - topic
