@@ -9,6 +9,10 @@ and follow through the steps to create a topic, start producing and consuming th
 ## Zookeeper
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
 
+### Check status
+- Add `4lw.commands.whitelist=*` in `zookeeper.properties` to whitelist command like `stat`, `conf`
+- Check the status of zookeeper using `telnet localhost 2181`
+
 ## Create Configuration for Kafka Instance
 
 - Make a copy of existing `server.properties` files to
