@@ -1,9 +1,10 @@
-# Kafka Single Instance
+# Part 3 - Run a single instance of Apache Kafka
 
-In order to follow the below sections, you need to setup Apache Kafka. And for that, you can follow the steps define in [Setup](README.md).
+To follow the below sections, you need to set up the Apache Kafka.
+And for that, you can follow the steps define in [startup section](index.md).
 
-After the installation, go to the kafka directory and follow though the steps to create a topic, start producing and consuming the messages.
-
+After the installation, go to the Kafka directory, something like this `kafka_2.13-2.8.0`
+and follow through the steps to create a topic, start producing and consuming the messages.
 
 ## Kafka Topic
 
@@ -18,7 +19,7 @@ After the installation, go to the kafka directory and follow though the steps to
 
 
 ## Kafka Console Producer
-`bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my_topic`
+`bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic my_topic`
 
 
 ## Kafka Console Consumer
@@ -27,6 +28,12 @@ After the installation, go to the kafka directory and follow though the steps to
 
 ## Kafka Message Log
 - Stored in `/tmp/kafka-logs`
-- For above topic, `my_topic-0` directory will be created
+- For the above topic, `my_topic-0` directory will be created
 - View log using `cat /tmp/kafka-logs/my_topic-0/00000000000000000000.log`
 
+## Series
+- [Part 1 - Kafka Key Terminology](kafka-key-terms.md)
+- [Part 2 - Kafka Partitions](kafka-partitions.md)
+- [Part 4 - Run a multiple instances of Apache Kafka](kafka-multiple-instance.md)
+- [Part 5 - Kafka Producer](kafka-producer.md)
+- [Part 6 - Kafka Consumer](kafka-consumer.md)

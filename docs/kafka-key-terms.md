@@ -1,4 +1,7 @@
-# Kafka Terms
+# Part 1 - Kafka Key Terminology
+
+This section focuses on the key terminology and concepts about Apache Kafka.
+And also note that each has its contribution to Apache Kafka Architecture.
 
 ## Distributed Messaging System
 
@@ -26,7 +29,7 @@
 
 ## Communication and Consensus
 - Worker node membership and naming
-- Configuration management - startup config
+- Configuration management - startup-config
 - Leader election
 - Health status
 
@@ -37,8 +40,8 @@
   - Health Status
   - Group membership
 - Add `4lw.commands.whitelist=*` in `zookeeper.properties` to whitelist command like `stat`, `conf`
-- It is the responsibility of zookeeper to assign broker to be responsible for the topic
-- Check status of zookeeper using `telnet localhost 2181`
+- It is the responsibility of the Zookeeper to assign a broker to be responsible for the topic
+- Check the status of zookeeper using `telnet localhost 2181`
 
 ## Topic message order
 - Ordered sequence (by time)
@@ -53,7 +56,7 @@
 
 ## Offset
 - Last read message position
-- Maintained by the kafka consumer
+- Maintained by the Kafka consumer
 - Corresponds to the message identifier
 
 ## Message Retention Policy
@@ -64,8 +67,8 @@
 ## Distributed Commit Log (Transaction or Commit Logs)
 - Source of truth
 - Physically stored and maintained
-- Higher-order data structures derive from the log
-  - Tables, indexes, views etc
+- Higher-order data structures derived from the log
+  - Tables, indexes, views, etc
 - Point of recovery
 - Basis for replication and distribution
 
@@ -96,3 +99,10 @@
 
 ## Notes
 - The scalability of Apache Kafka is determined by the number of partitions being managed by multiple broker nodes
+
+## Series
+- [Part 2 - Kafka Partitions](kafka-partitions.md)
+- [Part 3 - Run a single instance of Apache Kafka](kafka-single-instance.md)
+- [Part 4 - Run a multiple instances of Apache Kafka](kafka-multiple-instance.md)
+- [Part 5 - Kafka Producer](kafka-producer.md)
+- [Part 6 - Kafka Consumer](kafka-consumer.md)

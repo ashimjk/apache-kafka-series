@@ -1,4 +1,4 @@
-package com.github.ashimjk.kafka;
+package com.github.ashimjk.kafka.client;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -19,9 +19,12 @@ public class KafkaProducerApp {
 
         try (KafkaProducer<String, String> producer = new KafkaProducer<>(properties)) {
             for (int i = 0; i < 200; i++) {
-                ProducerRecord<String, String> record = new ProducerRecord<>("replica_topic",
-                                                                             Integer.toString(i),
-                                                                             "Message : " + i);
+                ProducerRecord<String, String> record = new ProducerRecord<>(
+                        "replica_topic",
+                        Integer.toString(i),
+                        "Message : " + i
+                );
+
                 producer.send(record);
             }
         } catch (Exception ex) {

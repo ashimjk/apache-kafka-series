@@ -26,8 +26,25 @@ create-topic:
 describe-topic:
 	${SH_PATH}/kafka-topics.sh --describe --zookeeper localhost:2181 --topic replica_topic
 
+describe-offsets:
+	${SH_PATH}/kafka-topics.sh --describe --zookeeper localhost:2181 --topic __consumer_offsets
+
 producer:
-	${SH_PATH}/kafka-console-producer.sh --broker-list localhost:9092 --topic replica_topic
+	${SH_PATH}/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic replica_topic
 
 consumer:
 	${SH_PATH}/kafka-console-consumer.sh --bootstrap-server localhost:9090 --topic replica_topic --from-beginning
+
+perf-producer:
+	${SH_PATH}/kafka-producer-perf-test.sh \
+		--topic replica_topic \
+		--num-records 50 \
+		--record-size 1 \
+		--throughput 10 \
+		--producer-props \
+			bootstrap.servers=localhost:9092 \
+			key.serializer=org.apache.kafka.common.serialization.StringSerializer \
+			value.serializer=org.apache.kafka.common.serialization.StringSerializer
+
+alter-topic:
+	${SH_PATH}/kafka-topics.sh --alter --zookeeper localhost:2181 --topic replica_topic --partitions 4

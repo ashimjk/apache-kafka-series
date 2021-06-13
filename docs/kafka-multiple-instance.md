@@ -1,4 +1,10 @@
-# Kafka Multiple Instance
+# Part 4 - Run a multiple instances of Apache Kafka
+
+To follow the below sections, you need to set up the Apache Kafka.
+And for that, you can follow the steps define in [startup section](index.md).
+
+After the installation, go to the Kafka directory, something like this `kafka_2.13-2.8.0`
+and follow through the steps to create a topic, start producing and consuming the messages.
 
 ## Zookeeper
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
@@ -25,26 +31,22 @@
   - For instance 1 - `log.dirs=/tmp/kafka-logs-1`
   - For instance 2 - `log.dirs=/tmp/kafka-logs-2`
 
-You can also find these configuration in `samples` directory.
+You can also find these configurations in [samples](../samples) directory.
 
 ## Start Multiple Instance
 
 ### Start Instance 0
 `bin/kafka-server-start.sh config/server-0.properties`
 
-
 ### Start Instance 1
 `bin/kafka-server-start.sh config/server-1.properties`
-
 
 ### Start Instance 2
 `bin/kafka-server-start.sh config/server-2.properties`
 
-
 ### Check Broker Registration using Zookeeper
 - `telnet localhost 2181`
 - type `stat`
-
 
 ## Create Topic
 `bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 1 --topic replica_topic`
@@ -57,11 +59,15 @@ Topic: replica_topic    TopicId: 6pL_IeaHRzW_OA4X_in1Og PartitionCount: 1       
     Topic: replica_topic    Partition: 0    Leader: 0       Replicas: 0,1,2 Isr: 0,1,2
 ```
 
-
 ## Kafka Console Producer
-`bin/kafka-console-producer.sh --broker-list localhost:9092 --topic replica_topic`
-
+`bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic replica_topic`
 
 ## Kafka Console Consumer
 `bin/kafka-console-consumer.sh --bootstrap-server localhost:9090 --topic replica_topic --from-beginning`
 
+## Series
+- [Part 1 - Kafka Key Terminology](kafka-key-terms.md)
+- [Part 2 - Kafka Partitions](kafka-partitions.md)
+- [Part 3 - Run a single instance of Apache Kafka](kafka-single-instance.md)
+- [Part 5 - Kafka Producer](kafka-producer.md)
+- [Part 6 - Kafka Consumer](kafka-consumer.md)
