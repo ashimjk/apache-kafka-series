@@ -94,3 +94,4 @@ Here is the full list of [consumer configs](https://kafka.apache.org/documentati
 - [Part 4 - Run a multiple instances of Apache Kafka](kafka-multiple-instance.md)
 - [Part 5 - Kafka Producer](kafka-producer.md)
 - [Part 7 - Kafka Challenges](kafka-challenges.md)
+- [Part 8 - Producer/Consumer using Kafka Client](producer-consumer-using-kafka-client.md)

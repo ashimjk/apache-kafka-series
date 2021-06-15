@@ -20,3 +20,4 @@ that we will use to start the Zookeeper and the Kafka.
 - [Part 5 - Kafka Producer](kafka-producer.md)
 - [Part 6 - Kafka Consumer](kafka-consumer.md)
 - [Part 7 - Kafka Challenges](kafka-challenges.md)
+- [Part 8 - Producer/Consumer using Kafka Client](producer-consumer-using-kafka-client.md)
