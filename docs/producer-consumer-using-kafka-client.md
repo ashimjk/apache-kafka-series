@@ -108,6 +108,8 @@ try (KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties)) {
 }
 ```
 
+Source of this section is available on [GitHub](https://github.com/ashimjk/apache-kafka-series/tree/master/kafka-client).
+
 ## Series
 - [Part 1 - Kafka Key Terminology](kafka-key-terms.md)
 - [Part 2 - Kafka Partitions](kafka-partitions.md)
