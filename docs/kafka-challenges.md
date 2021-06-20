@@ -46,4 +46,5 @@ and [Confluent Kafka Streams](https://docs.confluent.io/platform/current/streams
 - [Part 4 - Run a multiple instances of Apache Kafka](kafka-multiple-instance.md)
 - [Part 5 - Kafka Producer](kafka-producer.md)
 - [Part 6 - Kafka Consumer](kafka-consumer.md)
-- [Part 8 - Producer/Consumer using Kafka Client](producer-consumer-using-kafka-client.md)
+- [Part 8 - Producer/Consumer using Kafka Client](kafka-client.md)
+- [Part 9 - Producer/Consumer using Spring Kafka](spring-kafka.md)
