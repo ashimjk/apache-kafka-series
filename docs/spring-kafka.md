@@ -91,6 +91,8 @@ Although both of them are managed using the spring profile: [auto, manual], but 
 
 For implementation, please visit the [github](https://github.com/ashimjk/apache-kafka-series/tree/master/spring-kafka).
 
+For Spring Cloud Stream with Kafka implementation, please visit the [github](https://github.com/ashimjk/apache-kafka-series/tree/master/cloud-stream-kafka) here.
+
 ## Reference
 - [Spring for Apache Kafka Docs](https://spring.io/projects/spring-kafka)
 

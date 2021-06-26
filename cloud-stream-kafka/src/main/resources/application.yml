@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input-channel:
+          destination: my_topic
+        output-channel:
+          destination: my_topic
+      kafka:
+        binder:
+          brokers: localhost:9092
+#        bindings:
+#          input:
+#            consumer:
+#              value:
+#                  deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#          output:
+#            producer:
+#              configuration:
+#                value:
+#                  serializer: org.apache.kafka.common.serialization.StringSerializer
